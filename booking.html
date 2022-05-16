@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+        font: 1em sans-serif;
+        max-width: 400px;
+        margin: auto;
+        
+      }
+fieldset {
+  background-color: #eeeeee;
+}
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+body {
+  background-image: url('FFF.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width:30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+<h1>malak samir elsayed mostafa 20201562447</h1>
+<h2>BOOK YOUR TICKET</h2>
+<P> YOU WILL GET THE CHEAPEST AND THE BEST OFFERS WITH US</P>
+
+<br>
+<br>
+
+<form id="myForm" method="GET" >
+<fieldset>
+    <legend>BOOK YOUR TICKET !</legend>
+<div class="radio-btn">
+<input required type="radio" class="btn" name="check" checked><span>Round-trip</span>
+<input type="radio" class="btn" name="check"><span>one-way</span>
+<input type="radio" class="btn" name="check"><span>multy-city</span>
+</div>
+
+<br>
+<div class="input-grp">
+    <label>Departing</label><br>
+          <input required type="date" class="form-control select-date" >
+    </div>
+    
+    
+    <div class="input-grp">
+    <label>Returing</label><br>
+          <input required type="date" class="form-control select-date" >
+    </div>
+<label>Flying From</label> <br>
+      <input name="from" type="text" class="form-control" placeholder="City or Airport" >
+      <p id="para1"></p>
+<br>
+<label>Flying To</label>
+      <input name="to"type="text" class="form-control" placeholder="City or Airport" >
+      <p id="para2"></p>
+<br>
+
+
+<div>
+<label >Adults</label> 
+    <input  type="number" name="adult" >
+    <p id="para3"></p>
+             </div>
+<div class="input-grp">
+<label>children</label>
+      <input  type="number" class="form-control" name="child">
+      <p id="para4"></p>
+</div>
+
+<div class="input-grp">
+<label>Travel Class</label><br>
+<select class="custom-select">
+      <option value="1">Economy Class</option>
+	  <option value="2">Business Class</option>
+</select>
+</div>
+
+<input type="submit" value="Show Flight" >
+</fieldset>
+</form>
+<script src="script.js">
+</script>
+</body>
+</html>
